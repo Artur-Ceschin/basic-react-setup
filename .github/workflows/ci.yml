@@ -35,6 +35,6 @@ jobs:
 
       - name: Run typecheck
         run: yarn run typecheck
-      - name: Run tests
 
+      - name: Run tests
         run: yarn run ci:test
