@@ -2,9 +2,9 @@ name: 'react setup'
 
 on:
   push:
-    branches: [main]
+    branches: [main, feat/ci-changes ]
   pull_request:
-    branches: [main, basic-react-setup ]
+    branches: [main, feat/ci-changes ]
 
 jobs:
   ci:
