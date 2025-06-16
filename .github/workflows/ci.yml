@@ -21,8 +21,9 @@ jobs:
           with:
           node-version: ${{ matrix.node-version }}
           cache: 'yarn'
+
       - name: Delete prepare script
-      - run: npm pkg delete scripts.prepare
+        run: npm pkg delete scripts.prepare
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
