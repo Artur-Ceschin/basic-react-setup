@@ -14,4 +14,4 @@ phases:
   post_build:
     commands:
       - aws s3 sync --delete ./dist s3://${DEPLOY_BUCKET}
-      - aws cloudfront create-invalidation ${CF_ID} --paths /index.html
+      - aws cloudfront create-invalidation --distribution-id ${CF_ID} --paths /index.html
