@@ -13,6 +13,5 @@ phases:
       - yarn build
   post_build:
     commands:
-      - echo "Deploying to bucket: ${DEPLOY_BUCKET}"
       - aws s3 sync --delete ./dist s3://${DEPLOY_BUCKET}
       - aws cloudfront create-invalidation ${CF_ID} --paths /index.html
