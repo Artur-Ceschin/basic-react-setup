@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -36,5 +36,5 @@ export function App() {
         </div>
       </main>
     </div>
-  );
+  )
 }
